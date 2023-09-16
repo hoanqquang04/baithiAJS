@@ -1,0 +1,51 @@
+<div class="screen">
+
+    <div class="container">
+        <div class="left">
+        <div  *ngFor="let i of data">
+            <div class="list" (click)="chose(i.id)">
+    
+                <div class="nember" >
+            </div>
+            <img class="avata" src={{i.img}} alt="">
+            <h2>{{i.name}}</h2>
+            </div>
+            
+            
+        </div>
+    
+        </div>
+        <div class="right" >
+            <table class="custom-table">
+    <div class="img">
+    
+        <img class="avata1" src={{datachose.img}} alt="">
+        <h1 style="width: 100px ">{{datachose.name}}</h1>
+    </div>
+                <tbody class="body" >
+                    <tr>
+                        <td style="width: 100px ">Title</td>
+                        <td style="width: 100px ">{{datachose.title}}</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px ">Hire date</td>
+                        <td style="width: 100px ">{{datachose.date}}</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px ">Address</td>
+                        <td style="width: 100px ">{{datachose.address}}</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px ">City</td>
+                        <td style="width: 100px ">{{datachose.city}}</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px ">Phone</td>
+                        <td style="width: 100px ">{{datachose.phone}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+           
+    </div>
+</div>
